@@ -4,6 +4,9 @@
 .nuxt
 .nitro
 .cache
+package-lock.json
+
+# Static files
 dist
 
 # Node dependencies
