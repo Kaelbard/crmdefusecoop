@@ -1,7 +1,7 @@
 🎯 Objetivo
 Desenvolver um sistema para organização de empresas de pequeno ou médio porte, com funcionalidades de cadastro de vendas, serviços, produtos (estoque) e clientes, além de dashboard expositivo com gráficos para acompanhamento visual.
-🚀 Principais Funcionalidades
 
+🚀 Principais Funcionalidades
 Dashboard interativo: Visualize métricas e KPIs importantes para o seu negócio
 Gestão de produtos e estoque: Controle completo sobre seu inventário
 Gestão de clientes: Mantenha um registro detalhado de seus clientes
