@@ -355,7 +355,7 @@
 
 <script setup lang="ts">
 import { useSalesStore } from "~/store/sales";
-import { Sale } from "~/types/sale";
+import { type Sale } from "~/types/sale";
 import { formatters } from "~/types/common";
 import { useNotification } from "~/composables/useNotification";
 
@@ -374,7 +374,7 @@ const notification = useNotification();
 // Estado
 const isLoading = ref(true);
 const sales = ref<Sale[]>([]);
-const currentPage = ref(1);
+const currentPage = ref<number>(1);
 const pageSize = ref(10);
 const totalItems = ref(0);
 const totalPages = ref(1);
@@ -389,7 +389,6 @@ const filters = ref({
 const displayedPages = computed(() => {
   const pages = [];
   const maxPages = 5;
-
   if (totalPages.value <= maxPages) {
     for (let i = 1; i <= totalPages.value; i++) {
       pages.push(i);
@@ -608,7 +607,11 @@ const fetchSales = async () => {
     // Paginar os resultados
     const start = (currentPage.value - 1) * pageSize.value;
     const end = start + pageSize.value;
-    sales.value = filteredSales.slice(start, end);
+    sales.value = filteredSales.slice(start, end).map((sale) => ({
+      ...sale,
+      createdAt: new Date(sale.createdAt),
+      updatedAt: new Date(sale.updatedAt),
+    }));
   } catch (error) {
     console.error("Erro ao buscar vendas:", error);
     notification.error("Erro ao carregar as vendas");
