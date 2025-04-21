@@ -1,7 +1,7 @@
-🎯 Objetivo
+🎯 Objetivo:
 Desenvolver um sistema para organização de empresas de pequeno ou médio porte, com funcionalidades de cadastro de vendas, serviços, produtos (estoque) e clientes, além de dashboard expositivo com gráficos para acompanhamento visual.
 
-🚀 Principais Funcionalidades
+🚀 Principais Funcionalidades:
 Dashboard interativo: Visualize métricas e KPIs importantes para o seu negócio
 Gestão de produtos e estoque: Controle completo sobre seu inventário
 Gestão de clientes: Mantenha um registro detalhado de seus clientes
@@ -10,9 +10,8 @@ Gestão de serviços: Cadastre e monitore os serviços oferecidos
 Relatórios avançados: Gere relatórios detalhados para tomada de decisões
 Autenticação e controle de acesso: Segurança para seus dados empresariais
 
-🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas:
 Frontend
-
 Nuxt 3: Framework Vue.js para aplicações web
 TypeScript: Superset JavaScript com tipagem estática
 Pinia: Gerenciamento de estado
@@ -57,6 +56,7 @@ pnpm dev
 
 # Usando Bun
 bun run dev
+
 O aplicativo estará disponível em http://localhost:3000
 🏗️ Estrutura do Projeto
 sistema-gestao/
