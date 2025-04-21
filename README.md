@@ -58,7 +58,8 @@ pnpm dev
 bun run dev
 
 O aplicativo estará disponível em http://localhost:3000
-🏗️ Estrutura do Projeto
+
+🏗️ Estrutura do Projeto:
 sistema-gestao/
 ├── pages/                      # Páginas do aplicativo
 │   ├── index.vue               # Dashboard principal
