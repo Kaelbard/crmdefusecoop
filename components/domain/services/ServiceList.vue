@@ -73,6 +73,9 @@ import type { Service } from "~/types/service";
 import InputText from "~/components/forms/InputText.vue";
 import Select from "~/components/forms/Select.vue";
 import Button from "~/components/ui/Button.vue";
+import Table from "~/components/ui/Table.vue";
+import type { CategoryOption } from "~/types/category";
+
 const searchTerm = ref("");
 const filterType = ref("");
 

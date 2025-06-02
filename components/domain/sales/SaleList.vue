@@ -93,6 +93,7 @@ import type { Sale } from "~/types/sale";
 import InputText from "~/components/forms/InputText.vue";
 import Select from "~/components/forms/Select.vue";
 import Button from "~/components/ui/Button.vue";
+import Table from "~/components/ui/Table.vue";
 import type { SaleStatus } from "~/types/sale";
 
 const searchTerm = ref("");

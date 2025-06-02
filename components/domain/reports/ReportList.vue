@@ -125,6 +125,7 @@
 import { ref } from "vue";
 import Select from "~/components/forms/Select.vue";
 import Button from "~/components/ui/Button.vue";
+
 import type { ReportType } from "~/types/report";
 // Define the types for the report generation parameters
 interface ReportParams {

@@ -97,6 +97,7 @@ import type { Customer } from "~/types/customer";
 import Select from "~/components/forms/Select.vue";
 import InputText from "~/components/forms/InputText.vue";
 import Button from "~/components/ui/Button.vue";
+import Table from "~/components/ui/Table.vue";
 const props = defineProps<{
   customer?: Customer;
 }>();
